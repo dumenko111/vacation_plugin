@@ -13,23 +13,40 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     
+    
 }
 
 a {
     text-decoration: none;
 }
 
+h1, p, a {
+    color: white;
+}
+
 .container {
-    background-image: url(./Mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     max-width: 600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.6), 
+        rgba(47, 48, 58, 0.6)),
+    url(./111.jpg);
 }
 
 .photo {
-    max-width: 550px;
-    align-items: center;
+  position: relative;
+  overflow: hidden;
+  /* width: 280px;
+  height: 200px; */
+  /* border: 2px solid #000; */
+  
+}
+
+.photo > img {
+  width: 100%;
+  height: auto;
 }
 
 .tabs {
@@ -48,7 +65,7 @@ a {
     padding: 10px 20px;
     margin: 4px;
     border: 1px solid gray;
-    color: black;
+    color: white;
     font-weight: 500;
     text-decoration: none;
     border-radius: 8px;
@@ -67,7 +84,7 @@ a {
 
 .pane {
     display: none;
-    padding: 15px;
+    /* padding: 15px; */
 
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -81,7 +98,8 @@ a {
 .pane__city {
     margin-top: 0;
     margin-bottom: 16px;
-    font-size: 48px;
+    font-size: 25px;
+    color: white;
 }
 
 .pane__text {
